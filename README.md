@@ -2,9 +2,7 @@
 
 1. SumCalculator:
 
-        (1) Write a class with the name SimpleCalculator. The class needs two fields (instance variables) with names firstNumber and             secondNumber both of type double.
-
-        (2) Write the following methods (instance methods):
+        (1) Write a class with the name SimpleCalculator. The class needs two fields (instance variables) with names firstNumber and             secondNumber both of type double. Write the following methods (instance methods):
 
                 *Method named getFirstNumber without any parameters, it needs to return the value of firstNumber field.
                 
@@ -22,7 +20,7 @@
                 
                 *Method named getDivisionResult without any parameters it needs to return the result of dividing the field values of                     firstNumber by the secondNumber. In case the value of secondNumber is 0 then return 0.
 
-        (3) TEST EXAMPLE: 
+        (2) TEST EXAMPLE: 
 
             TEST CODE:
 
@@ -43,7 +41,7 @@
                 multiply= 0.0
                 divide= 0.0
 
-        (4) TIPS:
+        (3) TIPS:
 
                 *add= 9.0 is printed because 5.0 + 4 is 9.0
                 *subtract= 1.0 is printed because 5.0 - 4 is 1.0
@@ -52,9 +50,7 @@
 
 2. Person:
 
-        (1) Write a class with the name Person. The class needs three fields (instance variables) with the names firstName, lastName of         type String and age of type int. 
-
-        (2) Write the following methods (instance methods):
+        (1) Write a class with the name Person. The class needs three fields (instance variables) with the names firstName, lastName of         type String and age of type int. Write the following methods (instance methods):
 
                 *Method named getFirstName without any parameters, it needs to return the value of the firstName field.
                 
@@ -78,10 +74,9 @@
                 
                 *In case firstName is an empty String, return lastName.
     
-        (3) To check if s String is empty, use the method isEmpty from the String class. For example, firstName.isEmpty() returns true           if the String is empty or in other words, when the String does not contain any characters.
+        (2) To check if s String is empty, use the method isEmpty from the String class. For example, firstName.isEmpty() returns true           if the String is empty or in other words, when the String does not contain any characters.
 
-
-        (4) TEST EXAMPLE
+        (3) TEST EXAMPLE
 
         TEST CODE:
 
@@ -114,19 +109,10 @@
                 Create getters and setters for each field
                 Create two additional methods
 
-        (2) 
-                To allow the customer to deposit funds (this should increment the balance field).
-                
-                To allow the customer to withdraw funds.  This should deduct from the balance field, but not allow the withdrawal to                     complete if their are insufficient funds.
-                
-                You will want to create various code in the Main class (the one created by IntelliJ) to confirm your code is working.
-                
-                Add some System.out.println's in the two methods above as well.
+        (2) To allow the customer to deposit funds (this should increment the balance field). To allow the customer to withdraw funds.           This should deduct from the balance field, but not allow the withdrawal to complete if their are insufficient funds. You will           want to create various code in the Main class (the one created by IntelliJ) to confirm your code is working. Add some                   System.out.println's in the two methods above as well.
 
         (3) 
-                Account bobsAccount = new Account(); 
-                // "12345", 0.00, "Bob Brown", "myemail@bob.com",
-                //  "(087) 123-4567");
+                Account bobsAccount = new Account();
                 System.out.println(bobsAccount.getNumber());
                 System.out.println(bobsAccount.getBalance());
 
@@ -149,15 +135,13 @@
                 2nd constructor should pass on the 2 values it receives and add a default value for the 3rd
                 3rd constructor should save all fields.
                  
-        (2) create getters only for this using code generation of intellij as setters wont be neededtest and confirm it works.
+        (2) Create getters only for this using code generation of intellij as setters wont be neededtest and confirm it works.
         
 5. WallArea:
 
-        (1) Write a class with the name Wall. The class needs two fields (instance variables) with name width and height of type double.
+        (1) Write a class with the name Wall. The class needs two fields (instance variables) with name width and height of type double.         The class needs to have two constructors. The first constructor does not have any parameters (no-arg constructor). The                   second constructor has parameters width and height of type double and it needs to initialize the fields. In case the width is           less than 0 it needs to set the width field value to 0, in case the height parameter is less than 0 it needs to set the height           field value to 0.
 
-        (2) The class needs to have two constructors. The first constructor does not have any parameters (no-arg constructor). The               second constructor has parameters width and height of type double and it needs to initialize the fields. In case the width is           less than 0 it needs to set the width field value to 0, in case the height parameter is less than 0 it needs to set the height           field value to 0.
-
-        (3) Write the following methods (instance methods):
+        (2) Write the following methods (instance methods):
         
                 * Method named getWidth without any parameters, it needs to return the value of width field.
                 
@@ -169,8 +153,7 @@
                 
                 * Method named getArea without any parameters, it needs to return the area of the wall.
 
-
-        (4) TEST EXAMPLE
+        (3) TEST EXAMPLE
 
         → TEST CODE:
 
@@ -191,11 +174,9 @@
 
 6. Point:
 
-        (1) You have to represent a point in 2D space. Write a class with the name Point. The class needs two fields (instance                   variables) with name x and y of type int.
+        (1) You have to represent a point in 2D space. Write a class with the name Point. The class needs two fields (instance                   variables) with name x and y of type int. The class needs to have two constructors. The first constructor does not have any             parameters (no-arg constructor). The second constructor has parameters x and y of type int and it needs to initialize the               fields.
 
-        (2) The class needs to have two constructors. The first constructor does not have any parameters (no-arg constructor). The               second constructor has parameters x and y of type int and it needs to initialize the fields.
-
-        (3) Write the following methods (instance methods):
+        (2) Write the following methods (instance methods):
         
                 * Method named getX without any parameters, it needs to return the value of x field.
                 
@@ -211,13 +192,11 @@
                 
                 * Method named distance with parameter another of type Point, it needs to return the distance between this Point and                     another Point as double.
 
-        (4) How to find the distance between two points?To find a distance between points A(xA,yA) and B(xB,yB), we use the formula:
+        (3) How to find the distance between two points?To find a distance between points A(xA,yA) and B(xB,yB), we use the formula:
 
-                d(A,B)=√ (xB − xA) * (xB - xA) + (yB − yA) * (yB - yA)
+                d(A,B)=√ (xB − xA) * (xB - xA) + (yB − yA) * (yB - yA) Where √ represents square root.
 
-                Where √ represents square root.
-
-        (5) TEST EXAMPLE
+        (4) TEST EXAMPLE
 
         → TEST CODE:
 
@@ -236,7 +215,7 @@
                 distance(2,2)= 5.0
                 distance()= 0.0
 
-        (6) NOTE: 
+        (5) NOTE: 
                 
                 Use Math.sqrt to calculate the square root √.
                 Try to avoid duplicated code.
@@ -245,29 +224,15 @@
 
         (1) The Carpet Company has asked you to write an application that calculates the price of carpeting for rectangular rooms. To           calculate the price, you multiply the area of the floor (width times length) by the price per square meter of carpet. For               example, the area of the floor that is 12 meters long and 10 meters wide is 120 square meters. To cover the floor with a carpet         that costs $8 per square meter would cost $960.
 
-        (2) Write a class with the name Floor. The class needs two fields (instance variables) with name width and length of type               double. The class needs to have one constructor with parameters width and length of type double and it needs to initialize the          fields.
+        (2) Write a class with the name Floor. The class needs two fields (instance variables) with name width and length of type               double. The class needs to have one constructor with parameters width and length of type double and it needs to initialize the           fields.
 
-        (3) In case the width parameter is less than 0 it needs to set the width field value to 0, in case the length parameter is less         than 0 it needs to set the length field value to 0.
+        (3) In case the width parameter is less than 0 it needs to set the width field value to 0, in case the length parameter is less         than 0 it needs to set the length field value to 0. Write the following methods (instance methods): Method named getArea without         any parameters, it needs to return the calculated area (width * length).
 
-        (4) Write the following methods (instance methods):
+        (4) Write a class with the name Carpet. The class needs one field (instance variable) with name cost of type double. The class           needs to have one constructor with parameter cost of type double and it needs to initialize the field. In case the cost                 parameter is less than 0 it needs to set the cost field value to 0. Write the following methods (instance methods): Method named         getCost without any parameters, it needs to return the value of cost field
 
-                * Method named getArea without any parameters, it needs to return the calculated area (width * length).
+        (5) Write a class with the name Calculator. The class needs two fields (instance variables) with name floor of type Floor and           carpet of type Carpet. The class needs to have one constructor with parameters floor of type Floor and carpet of type Carpet and         it needs to initialize the fields. Write the following methods (instance methods): Method named getTotalCost without any                 parameters, it needs to return the calculated total cost to cover the floor with a carpet.
 
-
-        (5) Write a class with the name Carpet. The class needs one field (instance variable) with name cost of type double. The class           needs to have one constructor with parameter cost of type double and it needs to initialize the field. In case the cost                 parameter is less than 0 it needs to set the cost field value to 0.
-
-        (6) Write the following methods (instance methods):
-
-                * Method named getCost without any parameters, it needs to return the value of cost field
-
-        (7) Write a class with the name Calculator. The class needs two fields (instance variables) with name floor of type Floor and           carpet of type Carpet. The class needs to have one constructor with parameters floor of type Floor and carpet of type Carpet and         it needs to initialize the fields.
-
-        (8) Write the following methods (instance methods):
-
-                * Method named getTotalCost without any parameters, it needs to return the calculated total cost to cover the floor with                a carpet.
-
-
-        (9) TEST EXAMPLE
+        (6) TEST EXAMPLE
 
         → TEST CODE:
 
@@ -289,11 +254,9 @@
 
         (1) A complex number is a number that can be expressed in the form a + bi, where a and b are real numbers, and i is a solution           of the equation x2 = −1. Because no real number satisfies this equation, i is called an imaginary number. For the complex number         a + bi, a is called the real part, and b is called the imaginary part. To add or subtract two complex numbers, just add or               subtract the corresponding real and imaginary parts. For instance, the sum of 5 + 3i and 4 + 2i is 9 + 5i. For another, the sum         of 3 + i and –1 + 2i is 2 + 3i.
 
-        (2) Write a class with the name ComplexNumber. The class needs two fields (instance variables) with name real and imaginary of           type double. It represents the Complex Number.
+        (2) Write a class with the name ComplexNumber. The class needs two fields (instance variables) with name real and imaginary of           type double. It represents the Complex Number. The class needs to have one constructor. The constructor has parameters real and         imaginary of type double and it needs to initialize the fields.
 
-        (3) The class needs to have one constructor. The constructor has parameters real and imaginary of type double and it needs to           initialize the fields.
-
-        (4) Write the following methods (instance methods):
+        (3) Write the following methods (instance methods):
         
                 * Method named getReal without any parameters, it needs to return the value of real field.
                 
@@ -307,8 +270,7 @@
                 
                 * Method named subtract with one parameter other of type ComplexNumber. It needs to subtract the other parameter from                   this complex number.
 
-
-        (5) TEST EXAMPLE
+        (4) TEST EXAMPLE
 
         → TEST CODE:
 
@@ -333,40 +295,33 @@
                 number.real= 3.0
                 number.imaginary= -5.0
 
-
-        (6) NOTE: Try to avoid duplicated code.
+        (5) NOTE: Try to avoid duplicated code.
 
 (9) InheritanceTests:
 
         (1) Start with a base class of a Vehicle, then create a Car class that inherits from this base class. Finally, create another           class, a specific type of Car that inherits from the Car class.
  
-        (2) You should be able to hand steering, changing gears, and moving (speed in other words). You will want to decide where to put         the appropriate state and behaviours (fields and methods). As mentioned above, changing gears, increasing/decreasing speed               should be included.
-        
-        (3) For your specific type of vehicle you will want to add something specific for that type of car.
+        (2) You should be able to hand steering, changing gears, and moving (speed in other words). You will want to decide where to put         the appropriate state and behaviours (fields and methods). As mentioned above, changing gears, increasing/decreasing speed               should be included. For your specific type of vehicle you will want to add something specific for that type of car.
 
 (10) Cylinder: 
 
-        (1) Write a class with the name Circle. The class needs one field (instance variable) with name radius of type double.
+        (1) Write a class with the name Circle. The class needs one field (instance variable) with name radius of type double. The class         needs to have one constructor with parameter radius of type double and it needs to initialize the fields. In case the radius             parameter is less than 0 it needs to set the radius field value to 0.
 
-        (2) The class needs to have one constructor with parameter radius of type double and it needs to initialize the fields. In case         the radius parameter is less than 0 it needs to set the radius field value to 0.
-
-        (3) Write the following methods (instance methods):
+        (2) Write the following methods (instance methods):
         
                 * Method named getRadius without any parameters, it needs to return the value of radius field.
                 
                 * Method named getArea without any parameters, it needs to return the calculated area (radius * radius * PI). For PI use                 Math.PI constant.
 
-        (4) Write a class with the name Cylinder that extends Circle class. The class needs one field (instance variable) with name             height of type double. The class needs to have one constructor with two parameters radius and height both of type double. It             needs to call parent constructor and initialize a height field.
+        (3) Write a class with the name Cylinder that extends Circle class. The class needs one field (instance variable) with name             height of type double. The class needs to have one constructor with two parameters radius and height both of type double. It             needs to call parent constructor and initialize a height field.
 
-        (5) In case the height parameter is less than 0 it needs to set the height field value to 0.
-
-        (6) Write the following methods (instance methods):
+        (4) In case the height parameter is less than 0 it needs to set the height field value to 0. Write the following methods                 (instance methods):
         
                 * Method named getHeight without any parameters, it needs to return the value of height field.
                 
                 * Method named getVolume without any parameters, it needs to return the calculated volume. To calculate volume multiply                 the area with height.
 
-        (7) TEST EXAMPLE
+        (5) TEST EXAMPLE
 
         → TEST CODE:
 
@@ -392,27 +347,25 @@
 
         (1) The Swimming Company has asked you to write an application that calculates the volume of cuboid shaped pools. Write a class         with the name Rectangle. The class needs two fields (instance variable) with name width and length both of type double.
 
-        (2) The class needs to have one constructor with parameters width and length both of type double and it needs to initialize the         fields.
+        (2) The class needs to have one constructor with parameters width and length both of type double and it needs to initialize the         fields. In case the width parameter is less than 0 it needs to set the width field value to 0. In case the length parameter             is lessthan 0 it needs to set the length field value to 0.
 
-        (3) In case the width parameter is less than 0 it needs to set the width field value to 0. In case the length parameter is less         than 0 it needs to set the length field value to 0.
-
-        (4) Write the following methods (instance methods):
+        (3) Write the following methods (instance methods):
                 
                 * Method named getWidth without any parameters, it needs to return the value of width field.
                 
-                * Method named getLength without any parameters, it needs to return the value of length field.
+                * Method named getLength without any parameters, it needs to return the value of length field. 
                 
                 * Method named getArea without any parameters, it needs to return the calculated area (width * length).
 
-        (5) Write a class with the name Cuboid that extends Rectangle class. The class needs one field (instance variable) with name             height of type double. The class needs to have one constructor with three parameters width, length, and height all of type               double. It needs to call parent constructor and initialize a height field.
+        (4) Write a class with the name Cuboid that extends Rectangle class. The class needs one field (instance variable) with name             height of type double. The class needs to have one constructor with three parameters width, length, and height all of type               double. It needs to call parent constructor and initialize a height field.
 
-        (6) In case the height parameter is less than 0 it needs to set the height field value to 0. Write the following methods                 (instance methods):
+        (5) In case the height parameter is less than 0 it needs to set the height field value to 0. Write the following methods                 (instance methods):
                 
                * Method named getHeight without any parameters, it needs to return the value of height field.
                
                * Method named getVolume without any parameters, it needs to return the calculated volume. To calculate volume multiply                  the area with height.
 
-        (7) TEST EXAMPLE
+        (6) TEST EXAMPLE
 
         → TEST CODE:
 
