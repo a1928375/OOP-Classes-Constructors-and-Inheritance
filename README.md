@@ -141,7 +141,7 @@
                 Account timsAccount = new Account("Tim", "tim@email.com","12345");
                 System.out.println(timsAccount.getNumber() + " name " + timsAccount.getCustomerName());
 
-4. VipCustomer
+4. VipCustomer:
 
         (1) Create a new class VipCustomer. It should have 3 fields name, credit limit, and email address. create 3 constructors
                 
@@ -151,5 +151,92 @@
                  
         (2) create getters only for this using code generation of intellij as setters wont be neededtest and confirm it works.
         
+5. WallArea:
+
+        (1) Write a class with the name Wall. The class needs two fields (instance variables) with name width and height of type double.
+
+        (2) The class needs to have two constructors. The first constructor does not have any parameters (no-arg constructor). The               second constructor has parameters width and height of type double and it needs to initialize the fields. In case the width is           less than 0 it needs to set the width field value to 0, in case the height parameter is less than 0 it needs to set the height           field value to 0.
+
+        (3) Write the following methods (instance methods):
         
-      
+                * Method named getWidth without any parameters, it needs to return the value of width field.
+                
+                * Method named getHeight without any parameters, it needs to return the value of height field.
+                
+                * Method named setWidth with one parameter of type double, it needs to set the value of the width field. If the                         parameter is less than 0 it needs to set the width field value to 0.
+                
+                * Method named setHeight with one parameter of type double, it needs to set the value of the height field. If the                       parameter is less than 0 it needs to set the height field value to 0.
+                
+                * Method named getArea without any parameters, it needs to return the area of the wall.
+
+
+        (4) TEST EXAMPLE
+
+        → TEST CODE:
+
+                1 Wall wall = new Wall(5,4);
+                2 System.out.println("area= " + wall.getArea());
+                3 
+                4 wall.setHeight(-1.5);
+                5 System.out.println("width= " + wall.getWidth());
+                6 System.out.println("height= " + wall.getHeight());
+                7 System.out.println("area= " + wall.getArea());
+
+        → OUTPUT:
+
+                area= 20.0
+                width= 5.0
+                height= 0.0
+                area= 0.0
+
+6. Point:
+
+        (1) You have to represent a point in 2D space. Write a class with the name Point. The class needs two fields (instance                   variables) with name x and y of type int.
+
+        (2) The class needs to have two constructors. The first constructor does not have any parameters (no-arg constructor). The               second constructor has parameters x and y of type int and it needs to initialize the fields.
+
+        (3) Write the following methods (instance methods):
+        
+                * Method named getX without any parameters, it needs to return the value of x field.
+                
+                * Method named getY without any parameters, it needs to return the value of y field.
+                
+                * Method named setX with one parameter of type int, it needs to set the value of the x field.
+                
+                * Method named setY with one parameter of type int, it needs to set the value of the y field.
+                
+                * Method named distance without any parameters, it needs to return the distance between this Point and Point 0,0 as                     double.
+                
+                * Method named distance with two parameters x, y both of type int, it needs to return the distance between this Point                   and Point x,y as double.
+                
+                * Method named distance with parameter another of type Point, it needs to return the distance between this Point and                     another Point as double.
+
+        (4) How to find the distance between two points?To find a distance between points A(xA,yA) and B(xB,yB), we use the formula:
+
+                d(A,B)=√ (xB − xA) * (xB - xA) + (yB − yA) * (yB - yA)
+
+                Where √ represents square root.
+
+        (5) TEST EXAMPLE
+
+        → TEST CODE:
+
+                Point first = new Point(6, 5);
+                Point second = new Point(3, 1);
+                System.out.println("distance(0,0)= " + first.distance());
+                System.out.println("distance(second)= " + first.distance(second));
+                System.out.println("distance(2,2)= " + first.distance(2, 2));
+                Point point = new Point();
+                System.out.println("distance()= " + point.distance());
+
+        OUTPUT
+
+                distance(0,0)= 7.810249675906654
+                distance(second)= 5.0
+                distance(2,2)= 5.0
+                distance()= 0.0
+
+        (6) NOTE: 
+                
+                Use Math.sqrt to calculate the square root √.
+                Try to avoid duplicated code.
